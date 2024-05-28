@@ -69,6 +69,8 @@ ul {
 img {
     max-width: 100%;
     height: auto;
+    margin: 0px;
+    padding: 0px;
 }
 
 
@@ -187,6 +189,7 @@ main div {
     background-color: var(--dark2);
     color: white;
     margin:0px;
+    margin-top: -5px;
     padding: 3px;
     height: 56px;
 }
