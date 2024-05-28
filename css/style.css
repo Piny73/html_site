@@ -215,8 +215,24 @@ main div {
     font-size: 0.8em;
     background-color: burlywood;
 }
+/* contatti */
+.containercontatti{
+    display:flex;
+    flex-wrap: wrap;  
+}
+.contatti{
+    width: 33%;
+    padding: 30px;
+    background-color: lightgray;
+}
+.formcontatti{
+    width: 66%;
+}
+.contatti ul{padding: 0px;}
 
-
+.formcontatti .row{width: 100%; display:flex;}
+.formcontatti .lbl{width: 24%;}
+.formcontatti .tx, .formcontatti .txarea{width: 74%;}
 
 /*  responsive  */
 /*    mobile sotto i 767 di larghezza*/
