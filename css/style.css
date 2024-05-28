@@ -226,7 +226,7 @@ main div {
     .wrap-header .navbar li {display: block;}
 
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 600px) {
     .teamcard {width: 98%;}
     .wrap-header .menu-toggle {display: block;}
     .navbar {display:none}
