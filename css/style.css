@@ -1,0 +1,232 @@
+/* Colors: #0D2B1D, #345635, #6B8F71, #AEC3B0, #E3EFD3  */
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+
+
+/* reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    border-collapse: collapse;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+body,
+div {
+    margin: 0
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 20px
+}
+
+.navbar li {
+    background-color: var(--dark1);
+    padding: 15px;
+}
+
+.navbar ul {
+    font-size: 0px;
+}
+
+.navbar li a {
+    font-size: initial;
+    color: var(--light1)
+}
+
+.navbar li:hover,
+.navbar li:active {
+    background-color: var(--dark2);
+
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+body {
+    font-family: "Roboto Flex", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Georgia", serif;
+    text-align: center;
+}
+
+
+:root {
+    --light1: #E3EFD3;
+    --light2: #AEC3B0;
+    --medium1: #6B8F71;
+    --dark1: #345635;
+    --dark2: #0D2B1D;
+}
+
+
+
+/* header */
+
+header {
+    background-color: var(--light2);
+}
+
+.wrap-header .menu-toggle {
+    display: none;
+}
+
+.wrap-header,
+.wrap-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-logo img {
+    height: 120px;
+}
+
+.wrap-header .navbar li {
+    display: inline;
+}
+
+/*  footer */
+
+footer {
+    background-color: var(--light2);
+}
+
+.wrap-footer .navbar li {
+    display: block;
+}
+
+
+/* main  */
+.fullwidth {
+    width: 100%;
+    background-color: var(--light1);
+}
+
+main div {
+    padding: 10px;
+}
+
+.boxed {
+    max-width: 1100px;
+    margin: 0px auto;
+
+}
+
+.banner {
+    width: 100%;
+    background-color: var(--dark2);
+    color: var(--light2);
+    padding: 40px;
+}
+.menu-toggle a{
+    padding: 10px;
+    margin:10px;
+    font-size: x-large;
+    color:#0D2B1D;
+}
+.menu-x{
+    display:none;
+}
+/* card */
+.containercard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: stretch;
+}
+.teamcard {
+    position: relative;
+    border: 1px solid #7f7f7f;
+    width: 31%;
+    padding: 0px;
+    padding-bottom: 20px;
+    margin: 5px;
+}
+.cardname{
+    align-content: center;
+    background-color: var(--dark2);
+    color: white;
+    margin:0px;
+    padding: 3px;
+    height: 56px;
+}
+.cardrole {
+    background-color: var(--light2);
+    margin:0px;
+    padding: 3px;
+}
+.carddescription{
+    margin-bottom: 20px;
+}
+.teamcard table{
+    position: absolute;    
+    width: 100%;
+    bottom: 0px;
+}
+
+.teamcard td{
+    border: 1px solid;
+    text-align: center;
+    width: 50%;
+    color: #0D2B1D;
+    font-size: 0.8em;
+    background-color: burlywood;
+}
+
+
+
+/*  responsive  */
+/*    mobile sotto i 767 di larghezza*/
+@media only screen and (max-width: 767px) {
+
+    .teamcard {width: 48%;}
+    .wrap-header .navbar li {display: block;}
+
+}
+@media only screen and (max-width: 420px) {
+    .teamcard {width: 98%;}
+    .wrap-header .menu-toggle {display: block;}
+    .navbar {display:none}
+    .wrap-header {flex-direction: column;}
+
+}
