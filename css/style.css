@@ -1,6 +1,3 @@
-code
-style.css (5 KB)
-file_download Download Save to Drive Save to Drive more_vert
 /* Colors: #0D2B1D, #345635, #6B8F71, #AEC3B0, #E3EFD3  */
 
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
@@ -32,8 +29,8 @@ h6,
 p,
 ol,
 ul {
-    xmargin: 0;
-    xpadding: 0;
+    margin: 0;
+    padding: 0;
     font-weight: normal;
 }
 
@@ -207,7 +204,7 @@ main div {
 }
 
 .carddescription {
-    xxxmargin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .teamcard table {
@@ -263,6 +260,10 @@ main div {
 .formcontatti .tx,
 .formcontatti .txarea {
     width: 74%
+}
+.thumb{
+    max-width: 200px;
+    max-height: 150px;
 }
 
 

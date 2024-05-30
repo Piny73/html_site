@@ -23,7 +23,7 @@ function showOra() {
 
 function showData() {
     let data = new Date();
-    let txdata = data.getFullYear() + "-" + data.getMonth() + "-" + data.getDay();
+    let txdata = data.getFullYear() + "-" + (data.getMonth() + 1) + "-" + data.getDate();
     alert(txdata);
 }
 
@@ -40,7 +40,30 @@ function fetchProducts() {
         })
         .then((json) => {
             let objJson = json;
-            console.log(objJson);
+            let prodotti=objJson["products"];
+            let ris="";
+            for(pr of prodotti){
+                let riga=creaTRServizio(pr);
+                ris+=riga;
+            }
+            let outputtag=document.querySelector("#tservizi tbody");
+            outputtag.innerHTML=ris;
         });
 }
 
+function creaTRServizio(prodotto){
+/*<tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>*/
+
+let htmltr="<tr>";
+htmltr+="<td>" + prodotto ["title"] + "</td>";
+htmltr+="<td>" + prodotto ["category"] + "</td>";
+htmltr+="<td width='50%'>" + prodotto ["description"] + "</td>";
+htmltr+="<td><img class='thumb' src='" + prodotto ["images"][0] + "'></td>";
+htmltr+="</tr>";
+return htmltr;
+}
