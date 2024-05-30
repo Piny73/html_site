@@ -1,3 +1,6 @@
+code
+style.css (5 KB)
+file_download Download Save to Drive Save to Drive more_vert
 /* Colors: #0D2B1D, #345635, #6B8F71, #AEC3B0, #E3EFD3  */
 
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
@@ -29,8 +32,8 @@ h6,
 p,
 ol,
 ul {
-    margin: 0;
-    padding: 0;
+    xmargin: 0;
+    xpadding: 0;
     font-weight: normal;
 }
 
@@ -69,8 +72,6 @@ ul {
 img {
     max-width: 100%;
     height: auto;
-    margin: 0px;
-    padding: 0px;
 }
 
 
@@ -87,7 +88,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Georgia", serif;
+    font-family: "Reddit Mono", serif;
     text-align: center;
 }
 
@@ -159,23 +160,27 @@ main div {
     color: var(--light2);
     padding: 40px;
 }
-.menu-toggle a{
+
+.menu-toggle a {
     padding: 10px;
-    margin:10px;
+    margin: 10px;
     font-size: x-large;
-    color:#0D2B1D;
+    color: #0D2B1D;
 }
-.menu-x{
-    display:none;
+
+.menu-x {
+    display: none;
 }
-/* card */
-.containercard{
+
+/*  card    */
+.containercard {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
     align-items: stretch;
 }
+
 .teamcard {
     position: relative;
     border: 1px solid #7f7f7f;
@@ -184,68 +189,130 @@ main div {
     padding-bottom: 20px;
     margin: 5px;
 }
-.cardname{
-    align-content: center;
+
+.cardname {
     background-color: var(--dark2);
     color: white;
-    margin:0px;
+    margin: 0px;
     margin-top: -5px;
     padding: 3px;
-    height: 56px;
+    height: 56pX;
+    align-items: center;
 }
+
 .cardrole {
     background-color: var(--light2);
-    margin:0px;
+    margin: 0px;
     padding: 3px;
 }
-.carddescription{
-    margin-bottom: 20px;
+
+.carddescription {
+    xxxmargin-bottom: 20px;
 }
-.teamcard table{
-    position: absolute;    
+
+.teamcard table {
+    position: absolute;
     width: 100%;
     bottom: 0px;
 }
 
-.teamcard td{
-    border: 1px solid;
+.teamcard td {
+    border: 1px solid #6f6f6f;
     text-align: center;
     width: 50%;
     color: #0D2B1D;
     font-size: 0.8em;
     background-color: burlywood;
 }
+
+
 /* contatti */
-.containercontatti{
-    display:flex;
-    flex-wrap: wrap;  
+
+.containercontatti {
+    display: flex;
+    flex-wrap: wrap;
 }
-.contatti{
+
+.contatti {
     width: 33%;
     padding: 30px;
-    background-color: lightgray;
-}
-.formcontatti{
-    width: 66%;
-}
-.contatti ul{padding: 0px;}
+    background-color: #cbcbcb;
 
-.formcontatti .row{width: 100%; display:flex;}
-.formcontatti .lbl{width: 24%;}
-.formcontatti .tx, .formcontatti .txarea{width: 74%;}
+}
+
+
+.formcontatti {
+    width: 66%;
+
+}
+
+.contatti ul {
+    padding: 0px;
+}
+
+.formcontatti .row {
+    width: 100%;
+    display: flex;
+
+}
+
+.formcontatti .lbl {
+    width: 24%
+}
+
+.formcontatti .tx,
+.formcontatti .txarea {
+    width: 74%
+}
+
+
+
+
 
 /*  responsive  */
 /*    mobile sotto i 767 di larghezza*/
+@media only screen and (max-width: 1024px) {
+
+    .teamcard {
+        width: 48%;
+    }
+}
+
+
+
+/*    mobile sotto i 767 di larghezza*/
 @media only screen and (max-width: 767px) {
 
-    .teamcard {width: 48%;}
-    .wrap-header .navbar li {display: block;}
+
+
+    .wrap-header .navbar li {
+        display: block;
+    }
 
 }
+
+/*    mobile sotto i 600 di larghezza*/
 @media only screen and (max-width: 600px) {
-    .teamcard {width: 98%;}
-    .wrap-header .menu-toggle {display: block;}
-    .navbar {display:none}
-    .wrap-header {flex-direction: column;}
+
+    .teamcard {
+        width: 98%;
+    }
+}
+
+
+
+@media only screen and (max-width: 420px) {
+
+    .wrap-header .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none
+    }
+
+    .wrap-header {
+        flex-direction: column;
+    }
 
 }

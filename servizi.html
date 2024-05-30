@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servizi TSP24</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js">    </script>
+    <script src="js/servizi.js"></script>
+
 </head>
 
-<body>
+<body >
     <header>
         <div class="wrap-header">
             <div class="div-logo"><img src="img/logo.png" alt="logo startup tsp.24"></div>
@@ -21,6 +24,8 @@
                     <li><a href="/servizi.html">servizi</a></li>
                     <li><a href="/team.html">team</a></li>
                     <li><a href="/contatti.html">contatti</a></li>
+                    <li><input id="cerca" type="search" value="qweqwe"></li>
+                    <li id="orario"><a></a></li>
                 </ul>
             </div>
             <div class="menu-toggle">menu</div>
@@ -29,7 +34,19 @@
     <main>
         <div>
             <h1>Servizi</h1>
-            contenuto pagina
+            <p>Elenco dei servizi/prodotti forniti da tsp24</p>
+            <button onclick="showOra()" >mostra ORA</button>
+            <button id="btnData" >mostra DATA</button>
+            <table id="tservizi">
+                <tr>
+                    <td>title</td>
+                    <td>category</td>
+                    <td>description</td>
+                    <td>immagine</td>
+                </tr>
+
+            </table>
+
 
         </div>
     </main>
@@ -52,7 +69,7 @@
                     <li><a href="/contatti.html">contatti</a></li>
                 </ul>
             </div>
-           
+
         </div>
 
     </footer>
