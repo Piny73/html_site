@@ -57,7 +57,7 @@ function creaTRServizio(prodotto){
         <td></td>
         <td></td>
         <td></td>
-    </tr>*/
+</tr>*/
 
 let htmltr="<tr>";
 htmltr+="<td>" + prodotto ["title"] + "</td>";
