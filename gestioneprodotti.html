@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servizi TSP24</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/auth.js"></script>
     <script src="js/script.js">    </script>
     <script src="js/servizi.js"></script>
 
@@ -45,7 +46,7 @@
     </header>
     <main>
         <div>
-            <h1>Servizi</h1>
+            <h1>GESTIONE PRODOTTI</h1>
             <p>Elenco dei servizi/prodotti forniti da tsp24</p>
             <form id="fchoice">
                 <div class="divfiltra">seleziona categoria:
@@ -84,7 +85,8 @@
                     <label for="category" class="titolino">category:</label><input type="text" name="category" id="category"><br>
                     <label for="price" class="titolino">price:</label><input type="text" name="price" id="price"><br>
                     <label for="description" class="titolino">description:</label><textarea name="description" id="description"></textarea><br>
-                    
+                    <button id="btnaddservizi" onclick="addProduct()" type="button">Aggiungi Servizio</button> <label id="lblmsg">-</label>
+
                 </form>
 
             </div>
